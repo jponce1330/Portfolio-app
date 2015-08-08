@@ -1,0 +1,96 @@
+
+#container {
+	position: relative;
+	
+}
+
+/*#nav {
+	position: absolute;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: 100;
+
+}*/
+
+.home {
+	position: absolute;
+	left: 200px;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+.imaging {
+	position: absolute;
+	left: 400px;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+.illustration {
+	position: absolute;
+	right: 400px;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+.typography {
+	position: absolute;
+	right: 200px;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+img {
+	display: block;
+	margin: auto;
+	width: 220px;
+	height: 220px;
+}
+
+#title {
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: 200;
+}
+
+.thumb1 {
+	width: 275px;
+	height: 234px;
+	position: absolute;
+	margin-top: 80px; 
+
+}
+
+.thumb2 {
+	width: 275px;
+	height: 234px;
+	position: absolute;
+	margin-top: 80px;
+	left: 275px; 
+
+}
+
+.thumb3 {
+	width: 275px;
+	height: 234px;
+	position: absolute;
+	margin-top: 80px;
+	left: 550px; 
+
+}
+
+.rectangle {
+	width: 646px;
+	height: 410px;
+	left: 0px;
+	top: 315px;
+	position: absolute;
+}
+.large {
+	width: 835px;
+	height: 442px;
+}
