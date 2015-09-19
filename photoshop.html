@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
+		<h1 id="title">Portfolio</h1>
+				<nav class="clesrfix">
+					<ul class="clearfix">
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="photoshop.html">Imaging</a></li>
+						<li><a href="Illustrator.html">Illustration</a></li>
+						<li><a href="typecntrl.html">Typography</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+
+		<div id="container2">
+		
+			<div id="Photoshop">
+				<img class="Photoshop1"	src="imgsphotoshop/slide1.jpg" height="625" width="1309">
+				<img class="Photoshop1"	src="imgsphotoshop/slide2.jpg" height="625" width="1309">
+				<img class="Photoshop1"	src="imgsphotoshop/slide3.jpg" height="625" width="1309">	
+			</div>
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script>
+				/*-------------------------------------
+				| selection
+				-------------------------------------*/
+				// $('#Photoshop img').hide(); //select all
+				// $('#Photoshop img:eq(4)').hide(); //select just the first element - arrays start with zero
+				$('#Photoshop img:gt(0)').css({'opacity':'0'}); // greater then the first element
+
+				/*-------------------------------------
+				| slideshow
+				-------------------------------------*/
+
+				function Photoshop_slide() {
+					$('#Photoshop img:eq(1)').delay(3000).animate({'opacity':'1'}, 1000, whenDone);
+
+					function whenDone() {
+						$('#Photoshop img:eq(0)').appendTo('#Photoshop').css({'opacity':'0'});
+						Photoshop_slide(); //keep the party going
+					}
+
+				}
+
+				Photoshop_slide(); //start the party
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
+		<h1 id="title">Portfolio</h1>
+
+				<nav class="clesrfix">
+					<ul class="clearfix">
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="photoshop.html">Imaging</a></li>
+						<li><a href="Illustrator.html">Illustration</a></li>
+						<li><a href="typecntrl.html">Typography</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+				
+		<div id="container1">
+				<img src="imgslgillustrator/image_1.jpg" height="600" width="300">
+				<img src="imgslgillustrator/image_2.jpg" height="600" width="300">
+				<img src="imgslgillustrator/image_3.jpg" height="600" width="300">
+				<img src="imgslgillustrator/image_4.jpg" height="600" width="300">
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+
+			/*----------------------------------------
+        | Greater than the first
+        ----------------------------------------*/
+        $('#container1 img:gt(0)').css({'left':'600px'});
+         
+         /*-------------------------------------------
+          | sliding
+          -------------------------------------------*/
+          function sliding_slide() {
+          	$('#container1 img:eq(0)').delay(3000).animate({'left':'-600px'}, 1000, whenDone);
+          	$('#container1 img:eq(1)').delay(3000).animate({'left': '0px'}, 1000);
+
+          	function whenDone() {
+          		$('#container1 img:eq(0)').appendTo('#container1').css({'left':'300px'});
+
+          		sliding_slide(); //keep the party going
+
+                }
+
+            }
+
+             sliding_slide(); // start the party
+
+		</script>
+	</body>
+</html>
