@@ -3,20 +3,21 @@
 	<head>
 		<title>Typography</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
 	</head>
 	<body>
 	<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
 	<h1 id="title">Portfolio</h1>
-		<nav class="clesrfix">
-			<ul class="clearfix">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="photoshop.html">Imaging</a></li>
-				<li><a href="Illustrator.html">Illustration</a></li>
-				<li><a href="typecntrl.html">Typography</a></li>
-			</ul>
-			<a href="#" id="pull">Menu</a>
-		</nav>
+			<nav class="mainmenu">
+				<ul class="mainmenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="photoshop.html">Imaging</a></li>
+					<li><a href="Illustrator.html">Illustration</a></li>
+					<li><a href="typecntrl.html">Typography</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
 		<div id="cntrl">
 			<div class="slides">
 				<img src="imgs/Typography/image_1.jpg" height="600" width="300">
@@ -27,65 +28,8 @@
 				<button class="left">left</button>
 				<button class="right">right</button>
 			</div>
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/script.js"></script>
 		</div>
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script>
-		function mycntrl() {
-			/*--------------------------------------------
-	      | Greater than 1
-	      ---------------------------------------------*/
-	      $('#cntrl .slides img:gt()').css({'left':'300px'});
-
-	      /*-----------------------------------------
-	       | Keep track of its animating
-	       ---------------------------------------*/
-	      var moving = 'no';
-
-	      /*---------------------------------------
-	      | Left Button
-	      -------------------------------------*/
-	      function left_click() {
-	      	if (moving == 'no')
-	        {
-	        	moving = 'yes';
-
-		      	$('#cntrl .slides img:eq(0)').css({'left':'0px'}).animate({'left':'-600px'}, 1000, whenDone);
-		      	$('#cntrl .slides img:eq(1)').css({'left':'600px'}).animate({'left':'0px'}, 1000);
-		      	
-		      	function whenDone() {
-		      		$('#cntrl .slides img:eq(0)').appendTo('#cntrl .slides');
-		      		moving = 'no';
-	      		}
-	      	
-	      	}
-	     }
-
-	      $('#cntrl .buttons .left').click(left_click);
-	      /*-----------------------------------------------
-	       | Right Button
-	       -----------------------------------------------*/
-	   function right_click() {
-	      	if (moving == 'no')
-	        {
-	        	moving = 'yes';
-		      	function whenDone() {
-		      		$('#cntrl .slides img:last').prependTo('#cntrl .slides');
-		      		moving = 'no';
-	      		}
-
-		      	$('#cntrl .slides img:eq(0)').css({'left':'-600px'}).animate({'left':'0px'}, 1000, whenDone);
-		      	$('#cntrl .slides img:last').css({'left':'0px'}).animate({'left':'600px'}, 1000);
-	      	
-	      	}
-	     }
-
-	      $('#cntrl .buttons .right').click(right_click);
-
-
-	    }
-
-	    mycntrl();
-
-		</script>
 	</body>
 </html>
