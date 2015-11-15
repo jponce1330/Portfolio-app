@@ -3,12 +3,14 @@
 	<head>
 		<title>Typography</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
 	</head>
 	<body>
-	<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
-	<h1 id="title">Portfolio</h1>
+	<header>
+		<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
+		<h1>Portfolio</h1>
+	</header>
 			<nav class="mainmenu">
 				<ul class="mainmenu">
 					<li><a href="index.html">Home</a></li>
@@ -18,18 +20,17 @@
 				</ul>
 				<a href="#" id="pull">Menu</a>
 			</nav>
-		<div id="cntrl">
-			<div class="slides">
-				<img src="imgs/Typography/image_1.jpg" height="600" width="300">
-				<img src="imgs/Typography/image_2.jpg" height="600" width="300">
-				<img src="imgs/Typography/image_3.jpg" height="600" width="300">
+			<div id="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4"><img src="imgs/type/Image11.jpg"></div>
+					<div class="col-xs-12 col-md-4"><img src="imgs/type/Image12.jpg"></div>
+					<div class="col-xs-12 col-md-4"><img src="imgs/type/Image13.jpg"></div>
+				</div>
 			</div>
-			<div class="buttons">
-				<button class="left">left</button>
-				<button class="right">right</button>
-			</div>
-			<script src="js/jquery-1.11.3.min.js"></script>
-			<script src="js/script.js"></script>
+				<script src="js/jquery-1.11.3.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/script.js"></script>
+
 		</div>
 	</body>
 </html>

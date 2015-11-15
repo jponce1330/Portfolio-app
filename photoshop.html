@@ -3,11 +3,14 @@
 	<head>
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
-		<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
-		<h1 id="title">Portfolio</h1>
+		<header>
+			<img class="mylogo"	src="imgs/mylogo.gif" height="360" width="361">
+			<h1>Portfolio</h1>
+		</header>
 				<nav class="mainmenu">
 					<ul class="mainmenu">
 						<li><a href="index.html">Home</a></li>
@@ -17,40 +20,17 @@
 					</ul>
 					<a href="#" id="pull">Menu</a>
 				</nav>
-
-		<div id="container2">
-		
-			<div id="Photoshop">
-				<img class="Photoshop1"	src="imgsphotoshop/slide1.jpg" height="625" width="1309">
-				<img class="Photoshop1"	src="imgsphotoshop/slide2.jpg" height="625" width="1309">
-				<img class="Photoshop1"	src="imgsphotoshop/slide3.jpg" height="625" width="1309">	
+			<div id="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4"><img src="imgs/photoshop/Image1.jpg"></div>
+					<div class="col-xs-12 col-md-4"><img src="imgs/photoshop/Image2.jpg"></div>
+					<div class="col-xs-12 col-md-4"><img src="imgs/photoshop/Image3.jpg"></div>
+					<div class="col-xs-12 col-md-offset-3"><img src="imgs/photoshop/Image4.jpg"></div>
+				</div>
 			</div>
 			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
 			<script src="js/script.js"></script>
-			<script>
-				/*-------------------------------------
-				| selection
-				-------------------------------------*/
-				// $('#Photoshop img').hide(); //select all
-				// $('#Photoshop img:eq(4)').hide(); //select just the first element - arrays start with zero
-				$('#Photoshop img:gt(0)').css({'opacity':'0'}); // greater then the first element
-
-				/*-------------------------------------
-				| slideshow
-				-------------------------------------*/
-
-				function Photoshop_slide() {
-					$('#Photoshop img:eq(1)').delay(3000).animate({'opacity':'1'}, 1000, whenDone);
-
-					function whenDone() {
-						$('#Photoshop img:eq(0)').appendTo('#Photoshop').css({'opacity':'0'});
-						Photoshop_slide(); //keep the party going
-					}
-
-				}
-
-				Photoshop_slide(); //start the party
-			</script>
 		</div>
 	</body>
 </html>
