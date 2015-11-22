@@ -16,5 +16,6 @@
     <author href="https://poncejonathan.weebly.com" email="jponce1330@gmail.com">
         Jonathan Ponce
     </author>
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
 
 </widget>
