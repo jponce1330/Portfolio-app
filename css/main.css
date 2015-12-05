@@ -40,7 +40,7 @@ img { max-width: 100%; }
 nav {
     height: 40px;
     width: 100%;
-    background: #455868;
+    background: #74d0f5;
     font-size: 12px;
     font-family: arial;
     position: relative;
@@ -91,18 +91,19 @@ nav li:last-child a {
     border-right: 0;
 }
 
-nav a:hover, nav a:active {
-    background-color: gray;
-    text-decoration: none;
-    color: white;
+nav a:hover { 
+    background-color: #A56700; 
+}
+nav a.chosen { 
+    background-color: #3F94DB;
+    color: black;
 }
 
 nav a#pull {
     display: none;     
 }
 
-@media screen and (max-width: 1200px) {
-}
+@media screen and (max-width: 1200px) { }
 
 @media screen and (max-width: 960px) {
     nav {
@@ -117,10 +118,6 @@ nav a#pull {
         width: 50%;
         float: left;
         position: relative;
-    }
-    nav li a {
-        border-bottom: solid 1px #576979;
-        border-right: solid 1px #576979;
     }
     nav a {
         text-align: left;
@@ -141,7 +138,7 @@ nav a#pull {
 
     nav a#pull {
         display: block;
-        background-color: #283744;
+        background-color: #74d0f5;
         width: 100%;
         position: relative;
     }
@@ -169,9 +166,7 @@ nav a#pull {
         }
 }
 
-/*-------------------------------------
-| body
--------------------------------------*/
+
 
 
 

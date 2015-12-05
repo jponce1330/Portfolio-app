@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 /*-------------------------------------
 | menu nav funcation
 -------------------------------------*/
@@ -99,6 +101,9 @@ $('#cntrl .buttons .right').click(right_click);
 }
 
 mycntrl();
+
+
+}); /*here ends doc ready*/
 
 
 
