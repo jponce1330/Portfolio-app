@@ -93,6 +93,7 @@ nav li:last-child a {
 
 nav a:hover { 
     background-color: #A56700; 
+    text-decoration: none;
 }
 nav a.chosen { 
     background-color: #3F94DB;
