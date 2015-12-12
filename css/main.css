@@ -25,6 +25,23 @@ h1 {
 }
 
 /*-------------------------------------
+| sharing
+-------------------------------------*/
+.centered h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.centered button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(facebook_icon.png);
+}
+
+/*-------------------------------------
 | Bootstrap
 -------------------------------------*/
 .row > div {
@@ -166,8 +183,6 @@ nav a#pull {
             border-bottom: solid 1px #576979;
         }
 }
-
-
 
 
 
