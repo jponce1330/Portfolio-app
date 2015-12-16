@@ -38,6 +38,8 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30px;
+    height: 30px;
     background: url(facebook_icon.png);
 }
 
@@ -57,22 +59,23 @@ img { max-width: 100%; }
 nav {
     height: 40px;
     width: 100%;
-    background: #74d0f5;
     font-size: 12px;
     font-family: arial;
     position: relative;
+    text-transform: uppercase;
 }
 
 nav ul {
     padding: 0;
     margin: 0 auto;
-    width: 600px;
+    width: 573px;
     height: 40px;
 }
 
 nav li {
     display: inline;
     float: left;
+    width: 143px;
 }
 
 .mainmenu:before,
@@ -90,8 +93,9 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: black;    
     display: inline-block;
+    font-weight: 100;
     width: 140px;
     text-align: center;
     text-decoration: none;
@@ -109,12 +113,17 @@ nav li:last-child a {
 }
 
 nav a:hover { 
-    background-color: #A56700; 
+    background-color: #3F94DB; 
     text-decoration: none;
+    color: white;
+    box-shadow: 0 0 1em #9B999E;
+    font-weight: 100;
 }
 nav a.chosen { 
     background-color: #3F94DB;
-    color: black;
+    color: white;
+    box-shadow: 0 0 1em #9B999E;
+    font-weight: 100;
 }
 
 nav a#pull {
@@ -136,11 +145,16 @@ nav a#pull {
         width: 50%;
         float: left;
         position: relative;
+        padding: 2px;
     }
     nav a {
         text-align: left;
         width: 100%;
         text-indent: 25px;
+    }
+
+    nav li a {
+            text-align: center;
     }
 }
 
@@ -156,9 +170,11 @@ nav a#pull {
 
     nav a#pull {
         display: block;
-        background-color: #74d0f5;
         width: 100%;
         position: relative;
+        color: black;
+        font-weight: 100;
+        text-align: center;
     }
 
     nav a#pull:after {
@@ -180,8 +196,10 @@ nav a#pull {
         }
 
         nav li a {
-            border-bottom: solid 1px #576979;
+            text-align: center;
+            text-decoration: none;
         }
+
 }
 
 
