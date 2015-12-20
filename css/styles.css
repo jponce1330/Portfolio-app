@@ -6,6 +6,7 @@ body {
 	font-weight: 100;
 }
 #container 	{ 
+	border: solid red 1px;
 	min-width: 320px; 
 	max-width: 1200px;
 	margin: auto;
@@ -30,13 +31,15 @@ header img.logo {
 /*-------------------------------------
 | Bootstrap
 -------------------------------------*/
+.row {
+    margin-right: 0;
+    margin-left: 0;
+
 .row > div {
-	min-height: 300px;
 	padding: 40px;
 	width: 70%;
 }
 
-img { max-width: 100%; }
 
 
 
@@ -113,11 +116,11 @@ nav a#pull {
 	display: none;
 }
 
-@media screen and (max-width: 1800px) { }
+@media screen and (max-width: 1800px), (min-resolution: 326dpi) { }
 
-@media screen and (max-width: 1200px) { }
+@media screen and (max-width: 1200px), (min-resolution: 326dpi) { }
 
-@media screen and (max-width: 1080px) { }
+@media screen and (max-width: 1080px), (min-resolution: 326dpi) { }
 
 @media screen and (max-width: 960px) {
     nav { 
@@ -139,9 +142,10 @@ nav a#pull {
     }
 }
 
-@media only screen and (max-width : 768px)  {
+@media only screen and (max-width : 768px) {
     nav {
         border-bottom: 0;
+
     }
     nav ul {
         display: none;
