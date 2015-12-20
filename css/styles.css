@@ -1,0 +1,276 @@
+/*-------------------------------------
+| Core
+-------------------------------------*/
+body { 
+	font-family: Arial, sans-serif;
+}
+#container 	{ 
+	width: auto;
+
+	margin: auto;
+	background-color: #eee;
+}
+
+/*-------------------------------------
+| header
+-------------------------------------*/
+header img.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 705px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+/*-------------------------------------
+| Bootstrap
+-------------------------------------*/
+.row > div {
+	min-height: 135px;
+	padding: 40px;
+	width: 75%;
+}
+
+img { max-width: 100%; }
+
+
+
+/*-------------------------------------
+| Nav
+-------------------------------------*/
+nav {
+	height: 40px;
+	width: 100%;
+	background: #9d9d9d;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	position: relative;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+	height: 40px;
+}
+
+nav li {
+	display: inline;
+	float: left;
+}
+
+.mainmenu:before,
+.mainmenu:after {
+	content: " ";
+	display: table;
+}
+
+.mainmenu:after {
+	clear: both;
+}
+
+.mainmenu {
+	*zoom: 1;
+}
+
+nav a {
+	color: white;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+nav li:last-child a {
+	border-right: 0;
+}
+
+nav a:hover { 
+	background-color: #A56700;
+	text-decoration: none;
+	color: white;
+
+}
+nav a.chosen { 
+	background-color: white;
+	color: black;
+}
+
+nav a#pull {
+	display: none;
+}
+
+@media screen and (max-width: 1200px) { }
+
+@media screen and (max-width: 960px) {
+    nav { 
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #9d9d9d;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+    }
+}
+
+/*-------------------------------------
+| CF
+-------------------------------------*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+
+
+/*-------------------------------------
+| Floats and Box Sizing
+-------------------------------------*/
+
+#main * 		{ 
+	box-sizing: border-box 
+}
+
+#main article { 
+	height: 400px;
+	width: 541px;
+	margin: auto; 
+}
+
+#main aside { 
+	width: 40%; 
+	float: right; 
+}
+
+#main div img {
+	width: 20%;
+	display: inline-block;
+}
+
+
+
+/*-------------------------------------
+| Responsive
+-------------------------------------*/
+
+
+
+h2 {
+	margin-bottom: 20px;
+	color: #474E69;
+}
+
+/*Contact Form*/
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+textarea {
+	width: 400px;
+	height: 150px;
+	max-width: 400px;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+/*Submit Button*/
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background-color: #474E69; 
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
+
+/*-------------------------------------
+| Footer
+-------------------------------------*/
+#closing { 
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+	padding-bottom: -50px;
+}

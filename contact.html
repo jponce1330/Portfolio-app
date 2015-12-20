@@ -13,40 +13,51 @@
 			</header>
 			<nav class="mainmenu">
 				<ul class="mainmenu">
-					<li><a href="index.html" class="chosen">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="products.html">Products</a></li>
 					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="contact.html" class="chosen">Contact Us</a></li>
 					<li><a href="mission.html">Mission</a></li>
 				</ul>
 				<a href="#" id="pull">Menu</a>
 			</nav>
-
 			<div class="row">
 				<div class="col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
-					<p>
-						Xpertcom Solutions, Inc. is a Southern California based company that services the Southern California area. Our engineers are certified on various products that we service. We are committed to offer the best possible solutions that would custom fit our clients' needs.
-					</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
-					<p>
-						Xpertcom services state of the art voice and data networks for our rapid changing technology world. We also provide professional consultations for your voice and data network needs. Our staff members are highly trained and certified in various Private Branch Exchange (PBX), Voice Mail Systems, Unified Messaging solutions, and LAN, WAN products.
-					</p>
+					<form class="form">
+						
+						<p class="name">
+							<input type="text" name="name" id="name" placeholder="Full Name" />
+							<label for="name">Name</label>
+						</p>
+						
+						<p class="email">
+							<input type="text" name="email" id="email" placeholder="Email" />
+							<label for="email">Email</label>
+						</p>
+						
+						<p class="web">
+							<input type="text" name="web" id="web" placeholder="Optional" />
+							<label for="web">Website</label>
+						</p>		
+					
+						<p class="text">
+							<textarea name="text" placeholder="Write something to us" /></textarea>
+						</p>
+						
+						<p class="submit">
+							<input type="submit" value="Send" />
+						</p>
+					</form>
 				</div>
 			</div>
 			
 			<script src="js/jquery-1.11.3.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/java.js"></script>
-			
-			
 
 			<footer id="closing">
 				&copy; 2015. All rights reserved 
 			</footer>
 		</div>
 	</body>
-</html>
+</html>			
