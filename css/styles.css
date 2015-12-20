@@ -220,8 +220,11 @@ h2 {
 /*-------------------------------------
 | form
 -------------------------------------*/
+form {
+	padding: 100px;
+}
 
-.form1 label {
+form label {
 	font-weight: 400;
 	color: black;
 }
