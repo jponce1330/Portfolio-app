@@ -6,7 +6,6 @@ body {
 	font-weight: 100;
 }
 #container 	{ 
-	border: solid red 1px;
 	min-width: 320px; 
 	max-width: 1200px;
 	margin: auto;
@@ -32,8 +31,8 @@ header img.logo {
 | Bootstrap
 -------------------------------------*/
 .row {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .row > div {
