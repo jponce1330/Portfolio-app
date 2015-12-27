@@ -7,7 +7,6 @@ body {
 }
 #container 	{ 
 	min-width: 320px; 
-	max-width: 1200px;
 	margin: auto;
 	background-color: #eee;
 }
@@ -210,6 +209,9 @@ nav a#pull {
 	display: inline-block;
 }
 
+/*-------------------------------------
+| Form
+-------------------------------------*/
 
 
 /*-------------------------------------
