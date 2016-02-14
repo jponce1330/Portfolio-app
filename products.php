@@ -7,22 +7,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<div id="container">
+		<div id="container" class="cf">
 			<header>
-				<img class="logo" src="imgs/background.jpg" width="800" height="82">
+				<img class="logo" src="_imgs/background.jpg" width="800" height="82">
 			</header>
 			<nav class="mainmenu">
 				<ul class="mainmenu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="products.html" class="chosen">Products</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="mission.html">Mission</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="products.php" class="chosen">Products</a></li>
+					<li><a href="services.php">Services</a></li>
+					<li><a href="mission.php">Mission</a></li>
 				</ul>
 				<a href="#" id="pull">Menu</a>
 			</nav>
 			<div class="row">
-				<div class="col-xs-offset-2 col-md-offset-2 col-lg-12">
+				<div class="col-xs-offset-2 col-md-offset-2 col-lg-offset-2">
 					<p>
 						We provide state of the art Unified Messaging system manufactured by Captaris™. The various systems involved in the Unified Messaging system are as follows:
 					</p>
@@ -40,7 +39,7 @@
 				</div>
 			</div>
 			
-			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/jquery-1.12.0.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/java.js"></script>
 			<footer id="closing">

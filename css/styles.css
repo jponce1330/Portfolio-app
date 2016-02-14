@@ -3,13 +3,18 @@
 -------------------------------------*/
 body { 
 	font-family: Arial, sans-serif;
-	font-weight: 100;
 }
 #container 	{ 
-	min-width: 320px; 
+	width: 100%;
+	max-width: 1200px;
 	margin: auto;
 	background-color: #eee;
 }
+
+h1 {
+    font-size: 190%;
+}
+
 
 /*-------------------------------------
 | header
@@ -18,7 +23,7 @@ header img.logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
+	width: 705px;
 	height: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -29,16 +34,13 @@ header img.logo {
 /*-------------------------------------
 | Bootstrap
 -------------------------------------*/
-.row {
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .row > div {
+	min-height: 135px;
 	padding: 40px;
-	width: 70%;
+	width: 75%;
 }
 
+img { max-width: 100%; }
 
 
 
@@ -48,7 +50,7 @@ header img.logo {
 nav {
 	height: 40px;
 	width: 100%;
-	background: #9d9d9d;
+	background: #BF4949;
 	font-size: 11pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	position: relative;
@@ -59,11 +61,11 @@ nav ul {
 	margin: 0 auto;
 	width: 600px;
 	height: 40px;
+	text-align: center;
 }
 
 nav li {
 	display: inline;
-	float: left;
 }
 
 .mainmenu:before,
@@ -100,26 +102,22 @@ nav li:last-child a {
 }
 
 nav a:hover { 
-	background-color: white;
+	background-color: #475CAB;
 	text-decoration: none;
-	color: black;
-	font-weight: 100;
+	color: white;
 
 }
 nav a.chosen { 
-	background-color: white;
-	color: black;
+	background-color: #475CAB;
+	color: white;
+	font-weight: 100;
 }
 
 nav a#pull {
 	display: none;
 }
 
-@media screen and (max-width: 1800px), (min-resolution: 326dpi) { }
-
-@media screen and (max-width: 1200px), (min-resolution: 326dpi) { }
-
-@media screen and (max-width: 1080px), (min-resolution: 326dpi) { }
+@media screen and (max-width: 1200px) { }
 
 @media screen and (max-width: 960px) {
     nav { 
@@ -132,19 +130,20 @@ nav a#pull {
     }
     nav li {
         width: 50%;
+        float: left;
         position: relative;
     }
     
     nav a {
+        text-align: left;
         width: 100%;
-        text-align: center;
+        text-indent: 25px;
     }
 }
 
 @media only screen and (max-width : 768px) {
     nav {
         border-bottom: 0;
-
     }
     nav ul {
         display: none;
@@ -152,7 +151,7 @@ nav a#pull {
     }
     nav a#pull {
         display: block;
-        background-color: #9d9d9d;
+        background-color: #BF4949;
         width: 100%;
         position: relative;
     }
@@ -181,42 +180,55 @@ nav a#pull {
 /*-------------------------------------
 | CF
 -------------------------------------*/
-
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
 
 
 
 /*-------------------------------------
-| Floats and Box Sizing
+| Floats and Box Sizing/content
 -------------------------------------*/
 
-#main * 		{ 
+* { 
 	box-sizing: border-box 
 }
 
-#main article { 
-	height: 400px;
-	width: 541px;
-	margin: auto; 
+#main {
+	padding: 20px;
 }
 
-#main aside { 
-	width: 40%; 
-	float: right; 
+#main article  	{ 
+	background-color: #FFF; 
+	padding: 20px; 
+	float: left; 
+	width: 65%; 
 }
-
-#main div img {
-	width: 20%;
-	display: inline-block;
+#main aside  	{ 
+	background-color: #B07828; 
+	padding: 20px; 
+	float: left; 
+	width: 35%; 
 }
-
-/*-------------------------------------
-| Form
--------------------------------------*/
+#main p {
+	font-size: 15px;
+	color: black;
+	font-weight: 100;
+}
 
 
 /*-------------------------------------
 | Responsive
 -------------------------------------*/
+.btn-primary:focus, .btn-primary:hover {
+    background-color: #475CAB;
+    background-position: 0 -15px;
+}
+
+.btn-primary {
+	background-image: linear-gradient(to bottom,#475CAB ,#475CAB 100%);
+}
+
 
 
 
@@ -225,18 +237,79 @@ h2 {
 	color: #474E69;
 }
 
+/*Contact Form*/
 
+.modal-title {
+	text-align: center;
+	font-weight: 100;
+	font-size: 26px;
+}
+
+#feedback {
+	text-align: center;
+	font-weight: 100;
+	font-size: 26px;
+}
+
+form {
+	display: block;
+	margin-left: 82px;
+}
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+textarea {
+	width: 400px;
+	height: 160px;
+	max-width: 73%;
+	line-height: 20px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+/*Submit Button*/
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background-color: #475CAB; 
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
 
 /*-------------------------------------
 | Footer
 -------------------------------------*/
-#closing { 
-	display: block;
-	position: absolute;
-	left: 0px;
-	right: 0px;
+footer#closing { 
+	background-color: #3644A1;
 	text-align: center;
-	font-size: 12px;
-	font-weight: 300;
-	padding-bottom: -50px;
+	color: white;
+	padding: 20px;
 }
+footer#closing .contact,
+footer#closing .copy {
+
+	
+}
+footer#closing .copy { text-align: right; }
